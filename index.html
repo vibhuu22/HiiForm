@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form for JEE Main 2023</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+    />
+    <script>
+      function validateForm() {
+        let fname = document.forms["myForm"]["fname"].value;
+        let lname = document.forms["myForm"]["lname"].value;
+        let fatherFirstName = document.forms["myForm"]["fatherFirstName"].value;
+        let fatherLastName = document.forms["myForm"]["fatherLastName"].value;
+        let motherFirstName = document.forms["myForm"]["motherFirstName"].value;
+        let motherLastName = document.forms["myForm"]["motherLastName"].value;
+        let dob = document.forms["myForm"]["dob"].value;
+        let gender = document.forms["myForm"]["gender"].value;
+        let identificationType =
+          document.forms["myForm"]["identificationType"].value;
+        let identificationNumber =
+          document.forms["myForm"]["identificationNumber"].value;
+        let streetLine1 = document.forms["myForm"]["streetLine1"].value;
+        let streetLine2 = document.forms["myForm"]["streetLine2"].value;
+        let city = document.forms["myForm"]["city"].value;
+        let state = document.forms["myForm"]["state"].value;
+        let country = document.forms["myForm"]["country"].value;
+        let pincode = document.forms["myForm"]["pincode"].value;
+        let email = document.forms["myForm"]["email"].value;
+        let contactNumber = document.forms["myForm"]["contactNumber"].value;
+        let highSchoolYear = document.forms["myForm"]["highSchoolYear"].value;
+        let highSchoolBoard = document.forms["myForm"]["highSchoolBoard"].value;
+        let highSchoolPercentage =
+          document.forms["myForm"]["highSchoolPercentage"].value;
+        let intermediateYear =
+          document.forms["myForm"]["intermediateYear"].value;
+        let intermediateBoard =
+          document.forms["myForm"]["intermediateBoard"].value;
+        let intermediatePercentage =
+          document.forms["myForm"]["intermediatePercentage"].value;
+        let class10Marksheet =
+          document.forms["myForm"]["class10Marksheet"].value;
+        let photograph = document.forms["myForm"]["photograph"].value;
+        let examScheduleViews =
+          document.forms["myForm"]["examScheduleViews"].value;
+        let rating = document.forms["myForm"]["rating"].value;
+        let slot = document.forms["myForm"]["slot"].value;
+        let physicsRating = document.forms["myForm"]["physicsRating"].value;
+        let chemistryRating = document.forms["myForm"]["chemistryRating"].value;
+        let mathematicsRating =
+          document.forms["myForm"]["mathematicsRating"].value;
+        let declaration = document.forms["myForm"]["declaration"].checked;
+        if (fname == "") {
+          alert("First Name must be filled out");
+          return false;
+        }
+        if (lname == "") {
+          alert("Last Name must be filled out");
+          return false;
+        }
+        if (fatherFirstName == "") {
+          alert("Father's First Name must be filled out");
+          return false;
+        }
+
+        if (fatherLastName == "") {
+          alert("Father's Last Name must be filled out");
+          return false;
+        }
+
+        if (motherFirstName == "") {
+          alert("Mother's First Name must be filled out");
+          return false;
+        }
+
+        if (motherLastName == "") {
+          alert("Mother's Last Name must be filled out");
+          return false;
+        }
+        if (gender == "") {
+          alert("Gender must be selected");
+          return false;
+        }
+        if (dob == "") {
+          alert("Date of Birth must be filled out");
+          return false;
+        }
+
+        if (identificationType == "") {
+          alert("Identification Type must be selected");
+          return false;
+        }
+
+        if (identificationNumber == "") {
+          alert("Identification Number must be filled out");
+          return false;
+        }
+
+        if (streetLine1 == "") {
+          alert("Street Line 1 must be filled out");
+          return false;
+        }
+
+        if (streetLine2 == "") {
+          alert("Street Line 2 must be filled out");
+          return false;
+        }
+
+        if (city == "") {
+          alert("City must be filled out");
+          return false;
+        }
+
+        if (state == "") {
+          alert("State must be filled out");
+          return false;
+        }
+
+        if (country == "") {
+          alert("Country must be filled out");
+          return false;
+        }
+
+        if (pincode == "") {
+          alert("Pincode must be filled out");
+          return false;
+        }
+
+        if (email == "") {
+          alert("Email must be filled out");
+          return false;
+        }
+
+        if (contactNumber == "") {
+          alert("Contact Number must be filled out");
+          return false;
+        }
+
+        if (highSchoolYear == "") {
+          alert("High School Year must be filled out");
+          return false;
+        }
+
+        if (highSchoolBoard == "") {
+          alert("High School Board must be filled out");
+          return false;
+        }
+
+        if (highSchoolPercentage == "") {
+          alert("High School Percentage must be filled out");
+          return false;
+        }
+
+        if (intermediateYear == "") {
+          alert("Intermediate Year must be filled out");
+          return false;
+        }
+
+        if (intermediateBoard == "") {
+          alert("Intermediate Board must be filled out");
+          return false;
+        }
+
+        if (intermediatePercentage == "") {
+          alert("Intermediate Percentage must be filled out");
+          return false;
+        }
+
+        if (class10Marksheet == "") {
+          alert("Class 10 Marksheet must be uploaded");
+          return false;
+        }
+
+        if (photograph == "") {
+          alert("Photograph must be uploaded");
+          return false;
+        }
+
+        if (examScheduleViews == "") {
+          alert("Exam Schedule Views must be filled out");
+          return false;
+        }
+
+        if (rating == "") {
+          alert("Rating must be filled out");
+          return false;
+        }
+
+        if (slot == "") {
+          alert("Slot must be filled out");
+          return false;
+        }
+
+        if (physicsRating == "") {
+          alert("Physics Rating must be filled out");
+          return false;
+        }
+
+        if (chemistryRating == "") {
+          alert("Chemistry Rating must be filled out");
+          return false;
+        }
+
+        if (mathematicsRating == "") {
+          alert("Mathematics Rating must be filled out");
+          return false;
+        }
+
+        if (!declaration) {
+          alert("You must agree to the declaration");
+          return false;
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #NTA {
+        float: right;
+      }
+
+      #AAAAA {
+        size: 200px;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        caption-side: bottom;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: larger;
+      }
+      #Txt {
+        text-align: center;
+        margin-top: -5%;
+        margin-left: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span
+        ><img src="img1.png" width="300" alt="Extract the folder " />
+
+        <img src="img2.png" width="300" id="NTA" alt="Extract the folder " />
+
+        <h1 id="Txt">JEE Mains 2023 Registration Form</h1>
+      </span>
+
+      <br />
+
+      <hr />
+    </header>
+    <div class="container">
+      <form
+        name="myForm"
+        action="./completed.html"
+        onsubmit="return validateForm()"
+      >
+        <h2>Personal Details:</h2>
+        <label>Candidate's Name:</label>
+        <div>
+          <input type="text" id="fname" name="fname" placeholder="First Name" />
+          <input type="text" id="lname" name="lname" placeholder="Last Name" />
+        </div>
+
+        <br />
+        <br />
+
+        <label>Father's Name:</label>
+
+        <br />
+        <br />
+
+        <div>
+          <input type="text" name="fatherFirstName" placeholder="First Name" />
+          <input type="text" name="fatherLastName" placeholder="Last Name" />
+        </div>
+
+        <br />
+        <br />
+
+        <label>Mother's Name:</label>
+
+        <br />
+        <br />
+
+        <div>
+          <input type="text" name="motherFirstName" placeholder="First Name" />
+          <input type="text" name="motherLastName" placeholder="Last Name" />
+        </div>
+
+        <br />
+        <br />
+
+        <label>Candidate's Date of Birth:</label>
+
+        <br />
+        <br />
+
+        <input type="date" name="dob" />
+
+        <br />
+        <br />
+
+        <label>Gender:</label>
+
+        <br />
+        <br />
+
+        <select name="gender" name="gender" id="gd">
+          <option value="Select">--Select--</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer Not to Say">Prefer Not to Say</option>
+        </select>
+        <br />
+        <br />
+        <label>Type of Identification:</label>
+        <br />
+        <br />
+        <select name="identificationType" id="id2">
+          <option value="Select">--Select--</option>
+          <option value="Passport">Passport</option>
+          <option value="Driver's License">Driver's License</option>
+          <option value="Voter ID">Voter ID</option>
+          <option value="Aadhaar Card">Aadhaar Card</option>
+          <option value="Other">Other</option>
+        </select>
+        <br />
+        <br />
+        <label>Identification Number:</label>
+        <br />
+        <br />
+        <input type="text" name="identificationNumber" />
+        <br />
+        <br />
+        <h2>Address:</h2>
+
+        <label>Street Line 1:</label>
+        <br />
+        <input type="text" name="streetLine1" placeholder="Street Line 1" />
+        <br /><br />
+
+        <label>Street Line 2:</label>
+        <br />
+        <input type="text" name="streetLine2" placeholder="Street Line 2" />
+        <br /><br />
+
+        <label>City:</label>
+        <br />
+        <input type="text" name="city" placeholder="City" />
+        <br /><br />
+
+        <label>State:</label>
+        <br />
+        <input type="text" name="state" placeholder="State" />
+        <br /><br />
+
+        <label>Country:</label>
+        <br />
+        <input type="text" name="country" placeholder="Country" />
+        <br /><br />
+
+        <label>Pincode:</label>
+        <br />
+        <input type="text" name="pincode" placeholder="Pincode" maxlength="6" />
+        <br /><br />
+
+        <label>Email Address:</label>
+
+        <br />
+        <br />
+
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="example@example.com"
+        />
+
+        <br />
+        <br />
+
+        <label>Contact Number:</label>
+
+        <br />
+        <br />
+
+        <input type="tel" name="contactNumber" placeholder="Phone number" />
+
+        <br />
+        <br />
+
+        <h2>Educational Qualifications:</h2>
+
+        <table>
+          <caption>
+            High School
+          </caption>
+          <tr>
+            <th>Year</th>
+            <th>Board</th>
+            <th>Percentage</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="highSchoolYear" /></td>
+            <td><input type="text" name="highSchoolBoard" /></td>
+            <td><input type="number" name="highSchoolPercentage" /></td>
+          </tr>
+        </table>
+
+        <br />
+
+        <table>
+          <caption>
+            Intermediate
+          </caption>
+          <tr>
+            <th>Year</th>
+            <th>Board</th>
+            <th>Percentage</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="intermediateYear" /></td>
+            <td><input type="text" name="intermediateBoard" /></td>
+            <td><input type="number" name="intermediatePercentage" /></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+
+        <h2>Upload Documents:</h2>
+
+        <label>Class 10 Marksheet :</label>
+        <input type="file" name="class10Marksheet" accept=".pdf,.doc,.docx" />
+
+        <br />
+        <br />
+
+        <label>Photograph:</label>
+        <input type="file" name="photograph" accept=".jpg,.jpeg,.png" />
+
+        <br />
+        <br />
+        <h2>Your views on examination schedule ::</h2>
+
+        <label>Write Here:</label>
+        <textarea rows="4" name="examScheduleViews"></textarea>
+        <br />
+        <br />
+        <br />
+        <h2>Rate NTA Abhyas Mock Tests</h2>
+        <label for="rating">Rate NTA Abhyas Mock Tests:</label>
+        <br />
+        <input name="rating" type="radio" id="rate1" name="rating" value="1" />
+        <label for="rate1">1</label>
+        <input type="radio" id="rate2" name="rating" value="2" />
+        <label for="rate2">2</label>
+        <input type="radio" id="rate3" name="rating" value="3" />
+        <label for="rate3">3</label>
+        <input type="radio" id="rate4" name="rating" value="4" />
+        <label for="rate4">4</label>
+        <input type="radio" id="rate5" name="rating" value="5" />
+        <label for="rate5">5</label>
+        <br /><br />
+
+        <h2>Feedback for Session 1</h2>
+        <table>
+          <tr>
+            <th>Slot</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Mathematics</th>
+          </tr>
+          <tr>
+            <td>
+              <select name="slot">
+                <option value="">Select</option>
+                <option value="10 Jan Morning">10 Jan Morning</option>
+                <option value="10 Jan Evening">10 Jan Evening</option>
+                <option value="11 Jan Morning">11 Jan Morning</option>
+                <option value="11 Jan Evening">11 Jan Evening</option>
+                <option value="12 Jan Morning">12 Jan Morning</option>
+                <option value="12 Jan Evening">12 Jan Evening</option>
+                <option value="13 Jan Morning">13 Jan Morning</option>
+                <option value="13 Jan Evening">13 Jan Evening</option>
+                <option value="14 Jan Morning">14 Jan Morning</option>
+                <option value="14 Jan Evening">14 Jan Evening</option>
+                <option value="15 Jan Morning">15 Jan Morning</option>
+                <option value="15 Jan Evening">15 Jan Evening</option>
+                <option value="16 Jan Morning">16 Jan Morning</option>
+                <option value="16 Jan Evening">16 Jan Evening</option>
+              </select>
+            </td>
+            <td>
+              <select name="physicsRating">
+                <option value="">Select</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Hard">Hard</option>
+              </select>
+            </td>
+            <td>
+              <select name="chemistryRating">
+                <option value="">Select</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Hard">Hard</option>
+              </select>
+            </td>
+            <td>
+              <select name="mathematicsRating">
+                <option value="">Select</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Hard">Hard</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br /><br />
+
+        <h2>Declaration:</h2>
+
+        <input type="checkbox" name="declaration" id="declaration" />
+        <label for="declaration"
+          >I certify that the information provided is true and accurate.</label
+        >
+
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <h3>Important Guidelines</h3>
+    <ul>
+      <li>
+        <p>
+          Please download and read carefully the Information Bulletin and
+          instructions/procedure given therein and below.
+        </p>
+      </li>
+      <li>
+        <p>
+          Examination Fee: The Fee for JEE(Main) - 2023 per Session is as
+          follows:
+        </p>
+
+        <table>
+          <caption>
+            Fee Structure
+          </caption>
+          <thead>
+            <tr>
+              <th style="background-color: aqua">Course</th>
+              <th style="background-color: lemonchiffon">Category</th>
+              <th style="background-color: gray">Gender</th>
+              <th style="background-color: navajowhite">Fee Per Session</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">
+                Paper 1: B.E./B. Tech or Paper 2A: B. Arch or Paper 2B:
+                B.Planning
+              </td>
+              <td rowspan="2">General/Gen-EWS/ OBC(NCL)</td>
+              <td>Male</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Female</td>
+              <td>800</td>
+            </tr>
+            <tr>
+              <td rowspan="2">SC/ST/PwD</td>
+              <td>Male</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Female</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Third Gender</td>
+              <td></td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td rowspan="5">
+                Paper 1: B.E./B. Tech & Paper 2A: B. Arch or Paper 1: B.E./B.
+                Tech & Paper 2B: B. Planning or Paper 1: B.E./B.Tech, Paper 2A:
+                B. Arch & Paper 2B : B.Planning or Paper 2A: B. Arch & Paper 2B:
+                B.Planning
+              </td>
+              <td rowspan="2">General/Gen-EWS/ OBC(NCL)</td>
+              <td>Male</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Female</td>
+              <td>1600</td>
+            </tr>
+            <tr>
+              <td rowspan="2">SC/ST/PwD</td>
+              <td>Male</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Female</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Third Gender</td>
+              <td></td>
+              <td>1000</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p>
+          To download the information brochure,
+          <a
+            href="https://jeemain.nta.nic.in/information-bulletin/"
+            target="_blank"
+            >Click Here</a
+          >.
+        </p>
+      </li>
+      <li>
+        <p>
+          To download the NTA Abhyas App,
+          <a href="https://www.nta.ac.in/abhyas" target="_blank">Click Here</a>.
+        </p>
+      </li>
+    </ul>
+
+    <br /><br />
+
+    <footer>
+      <span>
+        <p style="background-color: black; color: aliceblue">Contact Us</p>
+        <a href="tel:011-40759000"
+          ><img
+            src="https://cdn0.iconfinder.com/data/icons/basic-uses-symbol-vol-1/100/Call_Phone_Cell_Ring_Pick_up-512.png"
+            width="20"
+        /></a>
+
+        <a href="mailto:jeemain@nta.ac.in"
+          ><img
+            width="20"
+            src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
+        /></a>
+      </span>
+    </footer>
+  </body>
+</html>
